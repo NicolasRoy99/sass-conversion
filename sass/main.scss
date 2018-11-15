@@ -1,1 +1,17 @@
 // main SASS file
+@import '_variables.scss';
+@import '_mixins.scss';
+
+%message-base {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
+}
+
+.error {
+    border-color: red;
+}
+
+.warning{
+    
+}
