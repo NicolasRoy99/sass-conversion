@@ -1,0 +1,32 @@
+@mixin something{
+    content:"";
+    position:absolute;
+    bottom:-1rem;
+    height:1rem;
+    width:30%;
+    background-color: $dark-blue;
+}
+
+@mixin something2{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin something3{
+    @media all and (min-width: 1401px){
+        @content;
+    }
+}
+
+@mixin something4{
+    @media all and (min-width: 901px) and (max-width: 1400px){
+        @content;
+    }
+}
+
+@mixin something5{
+    @media all and (min-width: 701px) and (max-width: 900px){
+        @content;
+    }
+}
